@@ -13,11 +13,12 @@
       color: #fff;
     }
   .logo{
-    color: #4F3B09;
+    text-align: center;
+    color: #8B4513;
     font-size: 50px;
     font-family: cursive;
     padding-left: 20px;
-    
+    text-shadow: 1px 1px 2px #fff;
     padding-top: 10px;
     margin-top: 5px
 }
@@ -34,12 +35,14 @@ border:solid 0px #8a0c7f;
     padding: 10px 30px 20px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
-  ::placeholder{
-    font-weight: bold;
-    font-family: cursive;
-    text-align: center;
-    color: #4F3B09
-  }
+  ::placeholder {
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+  color: #4F3B09;
+  font-size: 27px; 
+  opacity: 1;     
+}
         .footer{
     text-align: center;
     background-color: #4F3B09;
@@ -61,7 +64,7 @@ border:solid 0px #8a0c7f;
             justify-content:center;
             margin-right: 50px;
             margin-left: 50px;
-            margin-top: 150px;
+            margin-top: 20px;
             width: 150px;
             height: 80px;
             font-size: 30px;
@@ -76,6 +79,31 @@ border:solid 0px #8a0c7f;
   .logo:hover{
    color: brown;
 }
+  input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
+  display: block;
+  background: transparent;
+  border: 2px solid #4F3B09;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #4F3B09;
+}
+
+input[type="radio"] {
+  margin: 0 5px;
+  transform: scale(1.2);
+}
+label {
+  font-size: 24px;
+  display: inline-block;
+  margin-top: 10px;
+}
+  
     </style>
 </head>
 
@@ -86,23 +114,25 @@ border:solid 0px #8a0c7f;
             <hr size="20px" color="#4F3B09">
 
             <hr>
-            <label style="margin-left:7px;font-size: 30px;">Full Name</label><br>
-            <input style= "width: 200px;height: 25px;margin-left:7px; margin-top: 10px;background: transparent;
-    border: 2px solid #4F3B09; border-radius: 20px;" type="text" placeholder="Lastname" ><input type="text" placeholder="Firstname"style=" height: 25px; background: transparent;
-    border: 2px solid #4F3B09; border-radius: 40px;margin-left:7px;width: 170px;"><input type="text" placeholder="MI"style="width: 200px;height: 25px;margin-left:7px;background: transparent;
-    border: 2px solid #4F3B09; border-radius: 20px; margin-left:7px;width: 70px;"><br>
-            <br><label style=" margin-left:7px;font-size: 30px;">Address</label><br>
-            <input type="text" placeholder="Address"style="width: 200px;height: 25px;margin-left:7px; margin-top: 10px;background: transparent;
-    border: 2px solid #4F3B09; border-radius: 20px;"> <input type="number" placeholder="Cell Number"style="width: 200px;height: 25px;margin-left:7px;background: transparent;
-    border: 2px solid #4F3B09; border-radius: 20px;"><br>
-            <br><label style="margin-left:7px;font-size: 30px; ">Date of Birth</label><br>
-             <input type="date" style="width: 200px;height: 25px;margin-right: 70px;margin-top: 10px;background: transparent;
-    border: 2px solid #4F3B09; border-radius: 20px;"><label> Gender </label><input type="radio" ><label>Male</label><input type="radio" ><label>Female</label><br>
-                        <br><label style="margin-right:80px;font-size: 30px; ">Age</label>  <label style="margin-left:80px;font-size: 30px; ">Email</label><br>
-      <input type="number" placeholder="Age"style="width: 200px;height: 25px;margin-left:-10px;background: transparent;
-    border: 2px solid #4F3B09; border-radius: 20px;"> <input type="text" placeholder="Email/Address"style="width: 200px;height: 25px;margin-left:7px;background: transparent;
-    border: 2px solid #4F3B09; border-radius: 20px;" ><br>
-      <a href="Mt5.html"> <button  class="butt"> Log in</button></a>
+         <label>Full Name</label>
+<input type="text" placeholder="Lastname">
+<input type="text" placeholder="Firstname">
+<input type="text" placeholder="MI">
+
+<label>Address</label>
+<input type="text" placeholder="Address">
+<input type="number" placeholder="Cell Number">
+
+<label>Date of Birth</label>
+<input type="date">
+<label>Gender</label>
+<input type="radio" name="gender"><label>Male</label>
+<input type="radio" name="gender"><label>Female</label>
+
+<label>Age</label>
+<input type="number" placeholder="Age">
+<label>Email</label>
+<input type="text" placeholder="Email/Address"><a href="Mt5.html"> <button  class="butt"> Log in</button></a>
             <a href="Mt1.html"> <button  class="butt"> Sign in </button></a>
 
     </div>
